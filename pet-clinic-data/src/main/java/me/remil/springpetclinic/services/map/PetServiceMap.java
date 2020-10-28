@@ -2,11 +2,12 @@ package me.remil.springpetclinic.services.map;
 
 import me.remil.springpetclinic.model.Pet;
 import me.remil.springpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService
-{
+@Service
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
